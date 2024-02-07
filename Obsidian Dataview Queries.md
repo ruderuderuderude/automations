@@ -16,7 +16,7 @@ where status = " "
 ```dataview
 task FROM ""
 WHERE !completed
-WHERE contains(tags, "#todo/🎭Kunst/Atelier/Video")
+WHERE contains(tags, "#todo/Video")
 FLATTEN tags
 GROUP BY tags
 ```

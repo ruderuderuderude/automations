@@ -1,0 +1,36 @@
+## Zu Sehen hinzufügen
+
+``````
+<%*
+//edit this
+var appendFile = "Sehen";
+const append = await tp.system.prompt("Was willst du sehen?");
+
+// append content
+const originalContent = await app.vault.read(tp.file.find_tfile(appendFile));
+const contentNew = `- ${append} \n${originalContent}`
+await app.vault.modify(tp.file.find_tfile(appendFile), contentNew)
+new Notice('📌"' + append + '" zu Sehen hinzugefügt!');
+%>
+``````
+
+## Alter Inbox Capture mit Tagauswahl
+
+``````
+<%*
+//edit this
+const tags = Object.keys(app.metadataCache.getTags())
+let tagauswahl = await tp.system.suggester([...tags, "Make New"], [...tags, "Make New"])
+if (tagauswahl === "Make New") {
+    tagauswahl = await tp.system.prompt("new tag")
+}
+var appendFile = "024.01 Aufgabenliste Inbox";
+const append = await tp.system.prompt("Was willst du machen?");
+
+// append content
+const originalContent = await app.vault.read(tp.file.find_tfile(appendFile));
+const contentNew = `- [ ] ${append} ${tagauswahl} \n${originalContent}`
+await app.vault.modify(tp.file.find_tfile(appendFile), contentNew)
+new Notice('📌"' + append + '" zur Inbox hinzugefügt!');
+%>
+``````
