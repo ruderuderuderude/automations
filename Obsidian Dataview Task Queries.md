@@ -1,3 +1,5 @@
+Sammlung von Dataview Queries, die mit dem Modifiern `task` arbeiten.
+
 ## Dateien
 ### alle Aufgaben, die auf eine Notiz verweisen und noch nicht abgeschlossen sind
 

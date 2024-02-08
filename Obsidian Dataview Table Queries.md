@@ -1,3 +1,5 @@
+Sammlung von Dataview Queries, die den Modifikator `TABLE` verwenden.
+
 ## Sortieren
 
 ``````

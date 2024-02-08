@@ -1,3 +1,5 @@
+Sammlung von Obsidian Inline Queries.
+
 ## Automatischer Link in die Daily Note
 
 ``````
@@ -9,7 +11,7 @@
 ``````
 
 ## Fortschrittsbalken
-### Aus dem Demo Vault von Bagerbach.com
+### Von Bagerbach.com
 
 ``````
 ```dataview

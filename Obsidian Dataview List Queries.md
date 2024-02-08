@@ -1,3 +1,5 @@
+Sammlung von Dataview Queries, die mit dem Modifier `LIST` arbeiten.
+
 ## Dateien
 ### Alle Dateien mit Datum im Titel
 
